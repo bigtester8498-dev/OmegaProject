@@ -78,6 +78,8 @@ MOD_SKIP = {"catalog.ru.json"}
 # so a code-only update downloads a few MB. Each content package is one pack.
 RULES = [
     (r"^Omega_Data/Managed/Omega\.[^/]+$", "code"),
+    # version.txt changes with every release; in the engine pack it would make that pack new each time
+    (r"^version\.txt$", "code"),
     (r"^Omega_Data/Managed/", "engine-managed"),
     (r"^Omega_Data/", "data"),
     # Per-area splits of a big content package go here, before the generic rule, for example:
