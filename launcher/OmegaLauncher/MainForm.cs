@@ -444,15 +444,29 @@ namespace OmegaLauncher
                     _whatsNewFrame = frame;
                     _whatsNewTitle.Bounds = new Rectangle(inner.X, inner.Y, inner.Width, titleHeight);
 
-                    // One bullet per row: long lines are cut with an ellipsis and read in full in the dialog.
+                    // Bullets wrap at word boundaries (continuation rows indented under the text); only when the
+                    // frame runs out of rows is the last one cut with an ellipsis (the dialog has the full text).
                     var rows = Math.Max(1, (inner.Bottom - _whatsNewTitle.Bottom - Theme.S(4)) / lineHeight);
                     var shown = new List<string>();
+                    var cut = false;
                     foreach (var line in _whatsNewLines)
                     {
-                        if (shown.Count < rows)
+                        foreach (var row in Wrap(line, _whatsNewBody.Font, inner.Width - 2))
                         {
-                            shown.Add(Ellipsize(line, _whatsNewBody.Font, inner.Width - 2));
+                            if (shown.Count < rows)
+                            {
+                                shown.Add(row);
+                            }
+                            else
+                            {
+                                cut = true;
+                            }
                         }
+                    }
+
+                    if (cut && shown.Count > 0)
+                    {
+                        shown[shown.Count - 1] = Ellipsize(shown[shown.Count - 1] + " …", _whatsNewBody.Font, inner.Width - 2);
                     }
 
                     _whatsNewBody.Text = string.Join(Environment.NewLine, shown);
@@ -479,6 +493,43 @@ namespace OmegaLauncher
 
                 Theme.DrawFrame(e.Graphics, _whatsNewFrame, Theme.Frame);
             }
+        }
+
+        /// <summary>Splits one bullet into rows that fit <paramref name="width"/>; rows after the first are indented to
+        /// line up after "• ". A single word wider than the row is cut with an ellipsis.</summary>
+        private static List<string> Wrap(string text, Font font, int width)
+        {
+            const TextFormatFlags Flags = TextFormatFlags.NoPrefix | TextFormatFlags.SingleLine;
+            var unlimited = new Size(int.MaxValue, int.MaxValue);
+            var rows = new List<string>();
+            if (width <= 0 || TextRenderer.MeasureText(text, font, unlimited, Flags).Width <= width)
+            {
+                rows.Add(text);
+                return rows;
+            }
+
+            var indent = text.StartsWith("• ", StringComparison.Ordinal) ? "   " : string.Empty;
+            var words = text.Split(' ');
+            var current = string.Empty;
+            foreach (var word in words)
+            {
+                var candidate = current.Length == 0 ? (rows.Count == 0 ? word : indent + word) : current + " " + word;
+                if (current.Length == 0 || TextRenderer.MeasureText(candidate, font, unlimited, Flags).Width <= width)
+                {
+                    current = candidate;
+                    continue;
+                }
+
+                rows.Add(Ellipsize(current, font, width));
+                current = indent + word;
+            }
+
+            if (current.Length > 0)
+            {
+                rows.Add(Ellipsize(current, font, width));
+            }
+
+            return rows;
         }
 
         private static string Ellipsize(string text, Font font, int width)
