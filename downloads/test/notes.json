@@ -1,0 +1,266 @@
+{
+  "entries": [
+    {
+      "version": "v0.2.19",
+      "date": "2026-11-28T06:29:52Z",
+      "ru": [
+        "Рой видно издалека и в темноте: жуки и дальний рой не становятся меньше нескольких пикселей и сохраняют тусклый ржавый тон на тёмной земле. Последнее кресло: в зале запускают ту же капсулу, в которой ты садишься; монитор висит на люке, E сначала отодвигает его, потом открывает люк."
+      ],
+      "en": [
+        "The swarm is visible from far away and in the dark: bugs and the far swarm never shrink below a few pixels and keep a dim rust tone on dark ground. The last seat: the hall launches the same pod you land in; the monitor hangs on the hatch, and E first slides it aside, then opens the hatch."
+      ]
+    },
+    {
+      "version": "v0.2.18",
+      "date": "2026-11-27T20:16:57Z",
+      "ru": [
+        "Последнее кресло: монитор капсулы теперь ясно показывает посадку: освещённая планета с горизонтом и звёздами, растущее впереди поселение, пыль и отсвет двигателей при касании. Сквозь капсулу после выхода больше не пройти."
+      ],
+      "en": [
+        "The last seat: the pod monitor now clearly shows the landing: the lit planet with its horizon and stars, the home settlement growing ahead, dust and engine glare at touchdown. You no longer walk through the pod after stepping out."
+      ]
+    },
+    {
+      "version": "v0.2.17",
+      "date": "2026-11-27T19:31:38Z",
+      "ru": [
+        "Новое техдемо «Последнее кресло»: последовательность запуска. Зайдите в зал запуска, сядьте в последнее кресло, посмотрите, как другие роботы отправляют разум через портал, скопируйтесь в дрон-зонд, проснитесь в капсуле, приземлитесь на планету и выйдите по E. Пробел (удерживать) пропускает ожидание, Esc возвращает в список.",
+        "Первые звуки в игре: все синтезированы."
+      ],
+      "en": [
+        "New tech demo \"The last seat\": the launch sequence. Walk into the launch hall, take the last seat, watch the other robots send their minds through the portal, get copied into a probe drone, boot up in a pod, land on the planet and step out with E. Hold Space to skip waits, Esc returns to the list.",
+        "First sounds in the game: all synthesised."
+      ]
+    },
+    {
+      "version": "v0.2.16",
+      "date": "2026-11-27T17:51:22Z",
+      "ru": [
+        "Бои идут везде в игровом времени: каждое поселение галактики воюет с начала игры, дальние считаются крупным шагом, ускорение времени на карте двигает и бой рядом с вами.",
+        "Клавиши 1-6 задают размер роя сразу для всех поселений галактики.",
+        "Дальний вид роя держится, пока планета занимает около половины экрана, дальше становится простым пятном. Теперь он лежит в той же полосе, что и настоящий рой.",
+        "Выстрелы турелей дальнего поселения видны, только пока виден его рой."
+      ],
+      "en": [
+        "Battles go on everywhere in game time: every settlement in the galaxy fights from the game start, the far ones are computed coarsely, and time acceleration on the map moves the battle near you too.",
+        "Keys 1-6 set the swarm size for every settlement in the galaxy at once.",
+        "The far swarm view lasts while the planet fills about half the screen, then turns into a plain spot. It now covers the same band as the real swarm.",
+        "Turret shots of a far settlement are drawn only while its swarm is visible."
+      ]
+    },
+    {
+      "version": "v0.2.15",
+      "date": "2026-11-27T17:02:28Z",
+      "ru": [
+        "Перелёты с карты галактики. На карте три уровня: галактика, звёздная система, планета. Выберите систему, планету или поселение и нажмите «Лететь: ...». Tab в кресле пилота открывает карту на текущей системе. Старый список убран.",
+        "Пешком кнопка неактивна и подсказывает, как сесть в корабль."
+      ],
+      "en": [
+        "Travel from the galaxy map. The map has three levels: galaxy, star system, planet. Pick a system, a planet or a settlement and press \"Fly to ...\". Tab in the pilot seat opens the map at the current system. The old list panel is gone.",
+        "On foot the button is greyed out and says how to board the ship."
+      ]
+    },
+    {
+      "version": "v0.2.14",
+      "date": "2026-11-27T14:32:03Z",
+      "ru": [
+        "Клавиши 1-6 меняют размер роя сразу: новые юниты сразу идут с кольца спавна, а не со следующей волной; при уменьшении первыми исчезают самые дальние."
+      ],
+      "en": [
+        "Keys 1-6 change the swarm size right away: new units come in from the spawn ring at once instead of with the next wave, and fewer units means the farthest go first."
+      ]
+    },
+    {
+      "version": "v0.2.13",
+      "date": "2026-11-27T11:51:24Z",
+      "ru": [
+        "Игра идёт плавнее: ландшафт планет, далёкие планеты и дальняя масса роя теперь загружаются по кусочку за кадр, первый выстрел из минигана больше не даёт рывка. Земля у домашнего поселения снова прорисовывается примерно за 2 секунды после Новой игры."
+      ],
+      "en": [
+        "Smoother play: planet terrain, distant planets and the swarm's far mass now load one piece per frame, and the first minigun shot no longer hitches. The ground at your home settlement sharpens in about 2 seconds after New game again."
+      ]
+    },
+    {
+      "version": "v0.2.12",
+      "date": "2026-11-27T09:36:11Z",
+      "ru": [
+        "Больше нет рывков при прилёте. Поселения, их оборона и рой теперь подгружаются понемногу по мере приближения. Это работает одинаково при перелёте на двигателе, ручном полёте, ходьбе и после Продолжить. На тестовой машине ни один кадр не длился дольше 50 мс (раньше до 100 мс), а песочница работает примерно на 25% быстрее."
+      ],
+      "en": [
+        "No more stutter on arrival. Settlements, their defences and the swarm now load a little at a time as you get close, the same whether you use the drive, fly by hand, walk or press Continue. On the test machine no frame took longer than 50 ms (before: up to 100 ms), and the sandbox runs about 25% faster."
+      ]
+    },
+    {
+      "version": "v0.2.11",
+      "date": "2026-11-27T01:12:47Z",
+      "ru": [
+        "Новая игра и Продолжить теперь открывают играбельный мир, экрана-заглушки больше нет. Вы стоите пешком в своём поселении, рядом на площадке ваш корабль, поселение отбивается от роя. На каждой планете в пределах двух прыжков от старта 3-5 поселений, всего около 145. Расстояние между соседними поселениями 2-5 км.",
+        "Пешком: миниган (левая кнопка мыши) и бинокль (B). Маркер показывает путь к кораблю. E у двери: подняться на борт.",
+        "В кресле пилота можно лететь руками или нажать Tab и выбрать любое поселение, планету или систему. Перелёт занимает 2-5 секунд. Корабль поворачивает нос к цели, звёзды вытягиваются в полосы, маркер показывает цель, расстояние и оставшееся время. При посадке открывается окошко посадочной камеры.",
+        "Esc: меню (Продолжить, Сохранить, Главное меню). M: карта. F3: отладочные строки. Старые сохранения загружаются."
+      ],
+      "en": [
+        "New game and Continue now open the playable world; the placeholder screen is gone. You stand on foot at your settlement, your ship on its pad nearby, the settlement fighting off the swarm. Every planet within two jumps of the start has 3-5 settlements, about 145 in all, 2-5 km apart.",
+        "On foot: the minigun (left mouse) and binoculars (B). A marker leads to your ship; E at its door to board.",
+        "In the pilot seat, fly by hand or press Tab and pick any settlement, planet or system: every trip takes 2-5 seconds. The nose turns to the target, stars stretch into streaks, a marker shows the target, distance and time left; a landing camera inset opens on the way down.",
+        "Esc: menu (Continue, Save, Main menu). M: map. F3: debug lines. Old saves load."
+      ]
+    },
+    {
+      "version": "v0.2.10",
+      "date": "2026-11-26T22:06:47Z",
+      "ru": [
+        "Полёт (Тех. демо, Полёт): корабль летает по настоящей звёздной системе со всеми её планетами и лунами. В кресле пилота: мышь задаёт тангаж и рыскание, Q/E крен, WASD тягу и сдвиг, Space/Ctrl вверх и вниз, X включает и выключает помощь в полёте. Чем выше над поверхностью, тем выше потолок скорости, Shift удваивает его. Tab открывает панель навигации: площадки, орбиты, поселения и другие системы. Любой перелёт занимает от 2 до 5 секунд, даже к звезде за 966 световых лет. Это непрерывный полёт, без телепорта.",
+        "Автопилот: клавиши 1/2/3 снова работают. Раньше они не срабатывали, если на карте галактики время поставили на паузу. Теперь закрытие карты снимает паузу, а цифры на дополнительной клавиатуре работают и при выключенном NumLock."
+      ],
+      "en": [
+        "Flight (Tech demos, Flight): the ship flies a real star system with all its planets and moons. In the pilot seat: mouse for pitch and yaw, Q/E roll, WASD thrust and strafe, Space/Ctrl up and down, X toggles flight assist. The higher above the surface, the higher the speed cap; Shift doubles it. Tab opens the navigation panel: pads, orbits, settlements and other systems. Every trip takes 2 to 5 seconds, even to a star 966 light years away. It is continuous flight, not a teleport.",
+        "Autopilot: keys 1/2/3 work again. They did nothing after time was paused on the galaxy map. Closing the map now unpauses, and the keypad digits work with NumLock off."
+      ]
+    },
+    {
+      "version": "v0.2.9",
+      "date": "2026-11-26T20:36:11Z",
+      "ru": [
+        "Колония (C в игре или Тех. демо, Колония): на планете несколько поселений, и каждое всё время отбивается от роя. Рядом с вами рой настоящий, вдали он виден как живая масса вокруг поселения. Бинокль на B показывает настоящий рой там, куда вы смотрите. Левая кнопка мыши: миниган, убивает с одного попадания. Клавиши 1-6 задают размер роя, от 1 до 50 тысяч. Рабочие теперь работают, носят груз на склад и возвращаются, весь цикл укладывается в минуту.",
+        "Вселение: вид от первого лица больше не закрыт наполовину. Миниган есть у тела, у меха и у дрона.",
+        "Тех. демо: кнопка «Назад» больше не наезжает на последний пункт."
+      ],
+      "en": [
+        "Colony (C in the game, or Tech demos, Colony): a planet has several settlements, and each one fights off the swarm all the time. Near you the swarm is real; far away it shows as a living mass around the settlement. Binoculars on B show the real swarm where you look. Left mouse: a minigun that kills with one hit. Keys 1-6 set the swarm size, from 1 to 50 thousand. Workers now work, carry goods to the store and walk back, the whole cycle within a minute.",
+        "Possession: the first-person view is no longer half covered. The body, the mech and the drone all have the minigun.",
+        "Tech demos: the Back button no longer overlaps the last entry."
+      ]
+    },
+    {
+      "version": "v0.2.8",
+      "date": "2026-11-26T15:57:01Z",
+      "ru": [
+        "Ходьба по планете: больше нет зависаний на одну-пять секунд, даже когда процессор занят другими программами. Рельеф строится быстрее (около 115 fps вместо 103 на тестовом ноутбуке)."
+      ],
+      "en": [
+        "Planet walk: no more freezes of one to five seconds while walking on a planet, even when other programs load the processor. The terrain also builds faster (about 115 fps instead of 103 on the test laptop)."
+      ]
+    },
+    {
+      "version": "v0.2.7",
+      "date": "2026-11-26T15:16:53Z",
+      "ru": [
+        "Tech demos → «Вселение»: агент игрока может оставить тело и управлять другим юнитом. E у терминала берёт дрона (вид сверху, правый клик отправляет его в точку), R у меха садится в кабину, Q возвращает в тело.",
+        "NPC-капитан водит корабль теми же приказами, что и игрок: садится на дальнюю площадку и возвращается домой.",
+        "Бои отрядов: F показывает бой целиком, G решает его сразу по тем же правилам, C сравнивает оба способа на 100 боях. Консольная команда possess."
+      ],
+      "en": [
+        "Tech demos → Possession: the player's agent can leave the body and drive another unit. E at a terminal takes a drone (top view, right click sends it somewhere), R by a mech climbs into the cockpit, Q returns to the body.",
+        "An NPC captain flies a ship by the same orders as a player: it lands on the far pad and comes back home.",
+        "Squad fights: F plays one in full, G decides it at once by the same rules, C compares both over 100 runs. Console command possess."
+      ]
+    },
+    {
+      "version": "v0.2.6",
+      "date": "2026-11-26T14:39:08Z",
+      "ru": [
+        "Колонии: база колонии стоит на её планете, в ней здания и рабочие, которые носят товары на склад. Клавиша C на экране игры или Tech demos → «Колония».",
+        "Если отойти дальше 1,5 км или ускорить время на карте галактики, база переходит на быстрый расчёт с тем же выпуском; когда вернёшься, рабочие снова на месте.",
+        "Демо планеты из запущенной игры теперь открывает твою стартовую планету. Консольная команда colony (open, close, info)."
+      ],
+      "en": [
+        "Colonies: a colony's base stands on its planet with buildings and workers who carry goods to the store. Press C on the game screen, or open Tech demos → Colony.",
+        "Walk more than 1.5 km away or speed time up on the galaxy map, and the base switches to a fast calculation with the same output; come back and the workers are there again.",
+        "The planet demo from a running game now opens your own start planet. Console command colony (open, close, info)."
+      ]
+    },
+    {
+      "version": "v0.2.5",
+      "date": "2026-11-26T12:00:03Z",
+      "ru": [
+        "Tech demos → «Корабль»: можно ходить внутри летящего корабля (у салона своя физика, на скорости 1 км/с ничего не дрожит). G бросает ящик, E садится в кресло пилота и открывает дверь после посадки.",
+        "Автопилот взлетает на орбиту, перелетает к луне и садится на неё без экранов загрузки. На луне можно выйти и вернуться на борт.",
+        "Консольная команда ship (close, info, goto orbit|moon|home|off)."
+      ],
+      "en": [
+        "Tech demos → Ship: walk inside a flying ship (the cabin has its own physics; nothing shakes at 1 km/s). G drops a crate, E takes the pilot seat and opens the door after landing.",
+        "The autopilot takes off to orbit, flies to the moon and lands there with no loading screens. On the moon you can step outside and board again.",
+        "Console command ship (close, info, goto orbit|moon|home|off)."
+      ]
+    },
+    {
+      "version": "v0.2.4",
+      "date": "2026-11-26T10:39:10Z",
+      "ru": [
+        "Новая игра: выбор происхождения (житель центральных миров, старатель на фронтире, поселенец у границы). Происхождение задаёт персонажа, место старта и соседей; одинаковые происхождение и сид дают одну и ту же галактику.",
+        "В главном меню появились «Продолжить» и «Новая игра». На карте галактики (M) отмечена система, где находится игрок.",
+        "Моды: ModAPI 1.1 даёт модам чтение симуляции (галактика, колонии, игрок, события). Происхождение можно добавить модом без кода, пример example_origin.",
+        "Сохранения: формат 4, старые сохранения загружаются."
+      ],
+      "en": [
+        "New game: choose an origin (core world citizen, frontier prospector, border settler). The origin sets the character, the start location and the neighbours; the same origin and seed give the same galaxy.",
+        "The main menu has Continue and New game. The galaxy map (M) marks the system where the player is.",
+        "Mods: ModAPI 1.1 lets mods read the simulation (galaxy, colonies, the player, events). A mod can add an origin without code, see example_origin.",
+        "Saves: format 4; older saves load."
+      ]
+    },
+    {
+      "version": "v0.2.3",
+      "date": "2026-11-26T09:17:20Z",
+      "ru": [
+        "Tech demos → «Планета»: процедурная планета радиусом около 25 км. Можно ходить от первого лица (WASD, Shift бег, F полёт), рельеф подгружается с деталями до горизонта.",
+        "Клавиша B ставит постройку: земля под ней выравнивается и сохраняется вместе с миром.",
+        "Консольная команда planet (open, close, info, build, go МЕТРЫ)."
+      ],
+      "en": [
+        "Tech demos → Planet: a procedural planet of about 25 km radius. Walk in first person (WASD, Shift to run, F to fly); terrain streams in with detail out to the horizon.",
+        "B places a building: the ground under it is flattened and saved with the world.",
+        "Console command planet (open, close, info, build, go METRES)."
+      ]
+    },
+    {
+      "version": "v0.2.2",
+      "date": "2026-11-26T07:56:37Z",
+      "ru": [
+        "Галактика: 200 звёздных систем, 5 фракций, 60 колоний с почасовой экономикой. Клавиша M на игровом экране открывает карту галактики.",
+        "На карте время можно ставить на паузу и ускорять от x1 до x1000.",
+        "Мир сохраняется в saves/world.osav рядом с game.json.",
+        "Консольная команда galaxy показывает состояние галактики.",
+        "Меню «Техдемо»: рой на видеокарте. От 1 000 до 10 000 юнитов идут на базу по полю потоков, огибают здания и гибнут под огнём турелей.",
+        "Клавиши 1-4 переключают число юнитов (1k, 2k, 5k, 10k); мышь вращает камеру, колесо приближает.",
+        "Самопроверка (-selftest) замеряет рой при 1k-10k юнитов и честно пишет, когда кадры упираются в выключенный дисплей."
+      ],
+      "en": [
+        "Galaxy: 200 star systems, 5 factions, 60 colonies with an hourly economy. M on the game screen opens the galaxy map.",
+        "On the map, time can be paused and sped up from x1 to x1000.",
+        "The world is saved to saves/world.osav next to game.json.",
+        "Console command galaxy shows the state of the galaxy.",
+        "Tech demos menu: GPU swarm. 1,000 to 10,000 units march on a base over a flow field, route around buildings and die to turret fire.",
+        "Keys 1-4 switch the unit count (1k, 2k, 5k, 10k); drag the mouse to orbit, wheel to zoom.",
+        "The self-test (-selftest) measures the swarm at 1k-10k units and says when frames are held back by a display that is off."
+      ]
+    },
+    {
+      "version": "v0.2.0",
+      "date": "2026-11-25T20:49:09Z",
+      "ru": [
+        "Графика переведена на URP: на игровом экране освещённая 3D-сцена с тенями.",
+        "Главное меню и экран модов сделаны на UI Toolkit, новый шрифт с кириллицей.",
+        "Внутри игры работает симуляция мира (Omega.Sim): счётчик тиков на экране, консольная команда sim (pause, resume, speed X).",
+        "Самопроверка (-selftest) пишет fps, время кадра и память."
+      ],
+      "en": [
+        "Graphics moved to URP: the game screen shows a lit 3D scene with shadows.",
+        "Main menu and Mods screen rebuilt in UI Toolkit, new font with Cyrillic.",
+        "The world simulation (Omega.Sim) runs in the game: tick counter on screen, console command sim (pause, resume, speed X).",
+        "The self-test (-selftest) reports fps, frame times and memory."
+      ]
+    },
+    {
+      "version": "v0.1.1",
+      "date": "2026-11-25T14:48:20Z",
+      "ru": [
+        "Первая сборка: главное меню, менеджер модов, консоль."
+      ],
+      "en": [
+        "First build: main menu, mod manager, console."
+      ]
+    }
+  ]
+}

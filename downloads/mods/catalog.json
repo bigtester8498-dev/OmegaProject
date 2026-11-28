@@ -1,0 +1,126 @@
+{
+  "format": 1,
+  "builtAt": "2026-11-26T10:39:17Z",
+  "mods": [
+    {
+      "id": "example_code",
+      "name": {
+        "ru": "Example: code mod (C# and Harmony)",
+        "en": "Example: code mod (C# and Harmony)"
+      },
+      "description": {
+        "ru": "A C# mod: a Harmony patch adds a mark to the main menu title, a HUD line shows the play time and how many games were started (kept in the save), a main menu line, the console command 'excode', and with ModAPI 1.1 a log line with the player's origin and place read from the simulation. Source in src/, built by tools/build.ps1.",
+        "en": "A C# mod: a Harmony patch adds a mark to the main menu title, a HUD line shows the play time and how many games were started (kept in the save), a main menu line, the console command 'excode', and with ModAPI 1.1 a log line with the player's origin and place read from the simulation. Source in src/, built by tools/build.ps1."
+      },
+      "author": "OmegaProject",
+      "version": "1.1.0",
+      "kind": "code",
+      "game": ">=0.1.0",
+      "requires": [
+        {
+          "id": "core",
+          "version": ">=0.1.0"
+        }
+      ],
+      "size": 8197,
+      "sha256": "ffc35776988a28d89ca0f42857939d1bfa679e13f906012c04f9c30fa3fe0d63",
+      "url": "https://github.com/bigtester8498-dev/OmegaProject/releases/download/mods-20261126-103916/example_code-1.1.0-ffc35776988a28d8.zip"
+    },
+    {
+      "id": "example_conflict",
+      "name": {
+        "ru": "Example: conflict",
+        "en": "Example: conflict"
+      },
+      "description": {
+        "ru": "Changes the same field as example_data (the medkit's heal, to 10) and loads after it, so its value wins. The mod manager and the console command 'mods conflicts' show the conflict.",
+        "en": "Changes the same field as example_data (the medkit's heal, to 10) and loads after it, so its value wins. The mod manager and the console command 'mods conflicts' show the conflict."
+      },
+      "author": "OmegaProject",
+      "version": "1.0.0",
+      "kind": "data",
+      "game": ">=0.1.0",
+      "requires": [
+        {
+          "id": "core",
+          "version": ">=0.1.0"
+        }
+      ],
+      "size": 759,
+      "sha256": "5f9a4f8840683f62760715761fd034bdbe9a9d11cb9feb48e467e5c00a0bfcd6",
+      "url": "https://github.com/bigtester8498-dev/OmegaProject/releases/download/mods-20261125-144902/example_conflict-1.0.0-5f9a4f8840683f62.zip"
+    },
+    {
+      "id": "example_data",
+      "name": {
+        "ru": "Example: data patch",
+        "en": "Example: data patch"
+      },
+      "description": {
+        "ru": "A data mod, JSON only. It raises the medkit's heal from 25 to 40, adds the tag \"rare\" to it with $insert, removes \"consumable\" with $remove, adds a new item 'Large medkit' made from the medkit with $base, and renames the medkit in English and Russian.",
+        "en": "A data mod, JSON only. It raises the medkit's heal from 25 to 40, adds the tag \"rare\" to it with $insert, removes \"consumable\" with $remove, adds a new item 'Large medkit' made from the medkit with $base, and renames the medkit in English and Russian."
+      },
+      "author": "OmegaProject",
+      "version": "1.0.0",
+      "kind": "data",
+      "game": ">=0.1.0",
+      "requires": [
+        {
+          "id": "core",
+          "version": ">=0.1.0"
+        }
+      ],
+      "size": 1424,
+      "sha256": "d47c4c4b0d9a5c97478cbb5eaee1788931fe764b5b37f59ce10365604d5d08f9",
+      "url": "https://github.com/bigtester8498-dev/OmegaProject/releases/download/mods-20261125-144902/example_data-1.0.0-d47c4c4b0d9a5c97.zip"
+    },
+    {
+      "id": "example_origin",
+      "name": {
+        "ru": "Example: a new start (origin)",
+        "en": "Example: a new start (origin)"
+      },
+      "description": {
+        "ru": "A data mod, JSON only. It adds the origin 'Exile' with its own character 'Drifter': a smaller galaxy, a start on a barren or arctic world near a faction's border, everyone a little hostile. Pick it in New game.",
+        "en": "A data mod, JSON only. It adds the origin 'Exile' with its own character 'Drifter': a smaller galaxy, a start on a barren or arctic world near a faction's border, everyone a little hostile. Pick it in New game."
+      },
+      "author": "OmegaProject",
+      "version": "1.0.0",
+      "kind": "data",
+      "game": ">=0.1.0",
+      "requires": [
+        {
+          "id": "core",
+          "version": ">=0.1.0"
+        }
+      ],
+      "size": 2053,
+      "sha256": "ec878b5ea8922067bf9b7c94bbdc358a3bff09b483ecac3fc217904f7982d8cd",
+      "url": "https://github.com/bigtester8498-dev/OmegaProject/releases/download/mods-20261126-103916/example_origin-1.0.0-ec878b5ea8922067.zip"
+    },
+    {
+      "id": "example_requires",
+      "name": {
+        "ru": "Example: requires another mod",
+        "en": "Example: requires another mod"
+      },
+      "description": {
+        "ru": "Requires example_data (version 1.x) and changes the item that mod adds: the large medkit gets cheaper. Enabling it enables example_data too; disabling example_data disables it.",
+        "en": "Requires example_data (version 1.x) and changes the item that mod adds: the large medkit gets cheaper. Enabling it enables example_data too; disabling example_data disables it."
+      },
+      "author": "OmegaProject",
+      "version": "1.0.0",
+      "kind": "data",
+      "game": ">=0.1.0",
+      "requires": [
+        {
+          "id": "example_data",
+          "version": "^1.0.0"
+        }
+      ],
+      "size": 1168,
+      "sha256": "2061f00115ef6dabeb1f910ddd1076d660e1e2f1b467920307ad691949cbf7b2",
+      "url": "https://github.com/bigtester8498-dev/OmegaProject/releases/download/mods-20261125-144902/example_requires-1.0.0-2061f00115ef6dab.zip"
+    }
+  ]
+}
